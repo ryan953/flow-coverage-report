@@ -19,6 +19,7 @@
     "flow-check": "flow check",
     "lint": "xo --reporter=compact",
     "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "test": "cross-env NODE_ENV=test npm run build && npm run lint && npm run flow-check && npm run ava && npm run flow-coverage"
   },
   "keywords": [
